@@ -1,0 +1,1821 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: https://ogp.me/ns#">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ============================================================
+  SABLE AI — Production Site
+  Built by Knack Studios · knackstudio.netlify.app
+  
+  REPLACE GUIDE (search for [REPLACE: ...]):
+  · [REPLACE: CALENDLY_URL]  → your Calendly booking link
+  · [REPLACE: EMAIL]         → your contact email
+  · [REPLACE: PHONE]         → your phone number (optional)
+  · [REPLACE: CITY]          → your city (currently: Meridian, Idaho)
+  · [REPLACE: YEAR]          → current year for copyright
+  ============================================================ -->
+
+<!-- SEO META -->
+<title>Sable AI — AI Automation for Growing Businesses</title>
+<meta name="description" content="Sable AI builds intelligent automation systems for local and growing businesses. We eliminate repetitive work using AI — follow-ups, reports, content, and more — deployed in 48 hours.">
+<meta name="keywords" content="AI automation, business automation, AI consulting, workflow automation, small business AI, local business AI, Meridian Idaho, Treasure Valley">
+<meta name="author" content="Sable AI">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://sableai.co/">
+
+<!-- OPEN GRAPH -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sableai.co/">
+<meta property="og:title" content="Sable AI — AI Automation for Growing Businesses">
+<meta property="og:description" content="We build AI systems that eliminate your repetitive work. Follow-ups, reports, content, customer responses — running automatically in 48 hours.">
+<meta property="og:image" content="https://sableai.co/images/og-image.jpg">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Sable AI">
+
+<!-- TWITTER CARD -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Sable AI — AI Automation for Growing Businesses">
+<meta name="twitter:description" content="We build AI systems that eliminate your repetitive work. Deployed in 48 hours.">
+<meta name="twitter:image" content="https://sableai.co/images/og-image.jpg">
+
+<!-- SCHEMA MARKUP — LocalBusiness + ProfessionalService -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["ProfessionalService", "LocalBusiness"],
+      "@id": "https://sableai.co/#business",
+      "name": "Sable AI",
+      "description": "Sable AI designs and deploys intelligent automation systems for growing businesses using Claude AI. Services include competitor intelligence, review management, content automation, lead follow-up, business reporting, and document generation.",
+      "url": "https://sableai.co",
+      "logo": "https://sableai.co/images/logo.png",
+      "image": "https://sableai.co/images/og-image.jpg",
+      "telephone": "[REPLACE: PHONE]",
+      "email": "[REPLACE: EMAIL]",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Meridian",
+        "addressRegion": "ID",
+        "addressCountry": "US"
+      },
+      "areaServed": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": 43.6121,
+          "longitude": -116.3915
+        },
+        "geoRadius": "100000"
+      },
+      "priceRange": "$$",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "09:00",
+        "closes": "18:00"
+      },
+      "sameAs": []
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://sableai.co/#website",
+      "url": "https://sableai.co",
+      "name": "Sable AI",
+      "publisher": { "@id": "https://sableai.co/#business" }
+    },
+    {
+      "@type": "Service",
+      "name": "AI Business Automation",
+      "provider": { "@id": "https://sableai.co/#business" },
+      "serviceType": "Artificial Intelligence Automation",
+      "description": "Custom AI automation systems built on Claude AI for local and growing businesses. Includes workflow automation, content generation, lead follow-up, competitor intelligence, and more.",
+      "offers": {
+        "@type": "Offer",
+        "price": "500",
+        "priceCurrency": "USD",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "price": "500",
+          "priceCurrency": "USD",
+          "referenceQuantity": { "@type": "QuantitativeValue", "value": "1", "unitText": "setup" }
+        }
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How long does setup take?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Most automations go live within 48 hours of our discovery call." }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need technical knowledge?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. We handle all setup and configuration. You receive a plain-English walkthrough of what was built and how to make basic changes if needed." }
+        },
+        {
+          "@type": "Question",
+          "name": "What AI technology do you use?",
+          "acceptedAnswer": { "@type": "Answer", "text": "We build primarily on Claude AI by Anthropic — the same technology powering enterprise AI at Fortune 500 companies. We avoid unnecessary third-party platforms wherever possible." }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there a contract or long-term commitment?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No long-term contracts. Month-to-month retainers, cancellable with 30 days notice. Setup fees are non-refundable once work has begun." }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<!-- FONTS -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<!-- GSAP + PLUGINS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+
+<!-- LENIS SMOOTH SCROLL -->
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+
+<!-- SPLITTYPE -->
+<script src="https://cdn.jsdelivr.net/npm/split-type@0.3.4/umd/index.min.js"></script>
+
+<style>
+/* ============================================================
+   RESET & BASE
+============================================================ */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --black:    #0D0D0D;
+  --white:    #FFFFFF;
+  --g100:     #F5F5F5;
+  --g200:     #E8E8E8;
+  --g300:     #D1D1D1;
+  --g400:     #ABABAB;
+  --g600:     #6B6B6B;
+  --g800:     #2C2C2C;
+  --success:  #1A6B45;
+  --danger:   #B83232;
+  --font:     'Inter', system-ui, sans-serif;
+}
+
+html { overflow-x: hidden; }
+
+body {
+  font-family: var(--font);
+  background: var(--white);
+  color: var(--black);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* ============================================================
+   CUSTOM CURSOR — ticker tape trail
+============================================================ */
+#cursor {
+  position: fixed;
+  top: 0; left: 0;
+  width: 8px; height: 8px;
+  background: var(--black);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: transform 0.08s linear,
+              width 0.2s cubic-bezier(0.23,1,0.32,1),
+              height 0.2s cubic-bezier(0.23,1,0.32,1),
+              background 0.2s ease;
+}
+
+#cursor.hovering {
+  width: 14px; height: 14px;
+  background: var(--black);
+}
+
+#cursor.clicking {
+  width: 5px; height: 5px;
+}
+
+/* Custom cursor only runs on mouse/trackpad devices (JS adds html.has-cursor), at any window width.
+   While it runs, the native arrow/hand is hidden everywhere so it never shows on links. */
+#cursor { display: none; }
+html.has-cursor #cursor { display: block; }
+html.has-cursor, html.has-cursor *, html.has-cursor *::before, html.has-cursor *::after { cursor: none !important; }
+/* Hidden until the mouse is actually over the page (also inside the Knack Studios preview window) */
+html:not(.cursor-live) #cursor { visibility: hidden; }
+
+/* Each floating money particle */
+.money-particle {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9998;
+  font-family: var(--font);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--success);
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+  transform: translate(-50%, -50%);
+  animation: moneyFloat 1.1s cubic-bezier(0.23,1,0.32,1) forwards;
+}
+
+@keyframes moneyFloat {
+  0%   { opacity: 0.9; transform: translate(-50%, -50%) scale(1); }
+  30%  { opacity: 1;   transform: translate(-50%, -120%) scale(1.05); }
+  100% { opacity: 0;   transform: translate(-50%, -320%) scale(0.7); }
+}
+
+/* ============================================================
+   NAV
+============================================================ */
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 500;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 48px;
+  height: 64px;
+  background: rgba(255,255,255,0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 0.5px solid var(--g200);
+  will-change: transform;
+}
+
+.nav-logo {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--black);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  cursor: pointer;
+}
+
+.logo-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: var(--black);
+  display: block;
+  transition: transform 0.4s cubic-bezier(0.34,1.56,0.64,1);
+}
+
+.nav-logo:hover .logo-dot { transform: scale(1.8); }
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  list-style: none;
+}
+
+.nav-links a {
+  font-size: 13px;
+  color: var(--g600);
+  text-decoration: none;
+  letter-spacing: 0.01em;
+  transition: color 0.15s;
+  cursor: pointer;
+}
+
+.nav-links a:hover { color: var(--black); }
+
+.nav-cta {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--white) !important;
+  background: var(--black);
+  padding: 9px 22px;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-cta::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255,255,255,0.1);
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.nav-cta:hover::after { opacity: 1; }
+
+/* ============================================================
+   HERO
+============================================================ */
+.hero {
+  min-height: 100vh;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 140px 48px 100px;
+  border-bottom: 0.5px solid var(--g200);
+  position: relative;
+  overflow: hidden;
+}
+
+/* subtle dot-grid bg */
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, var(--g300) 1px, transparent 1px);
+  background-size: 48px 48px;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+/* hero reveal clip */
+.hero-reveal {
+  position: absolute;
+  inset: 0;
+  background: var(--white);
+  transform-origin: top;
+  z-index: 2;
+}
+
+.hero-content { position: relative; z-index: 3; max-width: 940px; }
+
+.eyebrow {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--g400);
+  margin-bottom: 32px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  opacity: 0;
+}
+
+.eyebrow-line {
+  display: block;
+  width: 28px;
+  height: 1px;
+  background: var(--g300);
+  flex-shrink: 0;
+}
+
+.hero-headline {
+  font-size: clamp(44px, 6.5vw, 80px);
+  font-weight: 600;
+  line-height: 1.04;
+  letter-spacing: -0.035em;
+  color: var(--black);
+  margin-bottom: calc(28px - 0.12em);
+  padding-bottom: 0.12em; /* room for descenders (y, g, p) so overflow:hidden doesn't clip them */
+  overflow: hidden;
+}
+
+/* SplitType will wrap each word — hide overflow so words slide up.
+   Extra bottom padding (cancelled by negative margin) keeps descenders from being clipped. */
+.hero-headline .word { overflow: hidden; display: inline-block; padding-bottom: 0.12em; margin-bottom: -0.12em; }
+
+.hero-headline .dim { color: var(--g400); }
+
+.hero-sub {
+  font-size: 18px;
+  color: var(--g600);
+  max-width: 500px;
+  line-height: 1.7;
+  margin-bottom: 52px;
+  font-weight: 300;
+  opacity: 0;
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  opacity: 0;
+}
+
+/* ============================================================
+   BUTTONS — magnetic wrapper
+============================================================ */
+.mag-wrap {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.btn-primary {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--white);
+  background: var(--black);
+  padding: 15px 30px;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: opacity 0.15s;
+  will-change: transform;
+}
+
+.btn-secondary {
+  font-size: 14px;
+  color: var(--g600);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.2s;
+  will-change: transform;
+}
+
+.btn-secondary:hover { color: var(--black); }
+
+.btn-arrow {
+  display: inline-block;
+  transition: transform 0.2s cubic-bezier(0.34,1.56,0.64,1);
+}
+
+.btn-primary:hover .btn-arrow,
+.btn-secondary:hover .btn-arrow { transform: translateX(4px); }
+
+/* ============================================================
+   TICKER
+============================================================ */
+.ticker-wrap {
+  margin-top: 56px;
+  padding: 24px 32px;
+  background: var(--g100);
+  border: 0.5px solid var(--g200);
+  border-radius: 10px;
+  max-width: 420px;
+  opacity: 0;
+}
+
+.ticker-label {
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--g400);
+  margin-bottom: 10px;
+}
+
+.ticker-val {
+  font-size: 44px;
+  font-weight: 600;
+  letter-spacing: -0.045em;
+  color: var(--success);
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+}
+
+.ticker-desc {
+  font-size: 13px;
+  color: var(--g600);
+  margin-top: 8px;
+  font-weight: 300;
+}
+
+/* ============================================================
+   STAT ROW
+============================================================ */
+.stat-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 56px;
+  margin-top: 64px;
+  padding-top: 40px;
+  border-top: 0.5px solid var(--g200);
+  flex-wrap: wrap;
+  opacity: 0;
+}
+
+.stat-label {
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--g400);
+  margin-bottom: 6px;
+}
+
+.stat-val {
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  color: var(--black);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ============================================================
+   SECTION BASE
+============================================================ */
+section {
+  padding: 100px 48px;
+  border-bottom: 0.5px solid var(--g200);
+  position: relative;
+  overflow: hidden;
+}
+
+.s-eyebrow {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--g400);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.s-eyebrow::before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 1px;
+  background: var(--g300);
+  flex-shrink: 0;
+}
+
+.s-title {
+  font-size: clamp(28px, 3.8vw, 48px);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1.08;
+  color: var(--black);
+  margin-bottom: calc(20px - 0.12em);
+  padding-bottom: 0.12em; /* room for descenders */
+  overflow: hidden;
+}
+
+.s-sub {
+  font-size: 16px;
+  color: var(--g600);
+  max-width: 460px;
+  font-weight: 300;
+  line-height: 1.75;
+  margin-bottom: 60px;
+}
+
+/* ============================================================
+   SERVICES GRID
+============================================================ */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  border: 0.5px solid var(--g200);
+}
+
+.service-card {
+  padding: 40px 36px;
+  border-right: 0.5px solid var(--g200);
+  border-bottom: 0.5px solid var(--g200);
+  position: relative;
+  overflow: hidden;
+  transition: background 0.3s;
+}
+
+.service-card:nth-child(3n) { border-right: none; }
+.service-card:nth-last-child(-n+3) { border-bottom: none; }
+
+/* CTA card */
+.service-card--cta {
+  background: var(--black);
+  transition: background 0.3s;
+}
+.service-card--cta::before { display: none; }
+.service-card--cta .sc-num { color: #444; }
+.service-card--cta .sc-name { color: var(--white); }
+.service-card--cta .sc-desc { color: var(--g400); }
+.sc-cta-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 24px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--white);
+  text-decoration: none;
+  border-bottom: 0.5px solid #444;
+  padding-bottom: 2px;
+  transition: border-color 0.2s, color 0.2s;
+  cursor: pointer;
+}
+.sc-cta-link:hover { border-color: var(--white); }
+
+.service-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--g100);
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 0.4s cubic-bezier(0.23,1,0.32,1);
+}
+
+.service-card:hover::before { transform: scaleY(1); }
+
+.sc-inner { position: relative; z-index: 1; }
+
+.sc-num {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  color: var(--g400);
+  margin-bottom: 24px;
+  font-variant-numeric: tabular-nums;
+}
+
+.sc-name {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--black);
+  margin-bottom: 12px;
+  letter-spacing: -0.01em;
+}
+
+.sc-desc {
+  font-size: 13px;
+  color: var(--g600);
+  line-height: 1.65;
+  font-weight: 300;
+}
+
+.sc-tag {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 11px;
+  font-weight: 500;
+  padding: 3px 10px;
+  background: var(--white);
+  border: 0.5px solid var(--g200);
+  border-radius: 20px;
+  color: var(--g600);
+}
+
+/* ============================================================
+   RETAINER EXPAND
+============================================================ */
+.retainer-expand {
+  margin-top: 0;
+  border-top: 0.5px solid var(--g200);
+}
+
+.retainer-toggle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 36px;
+  background: var(--g100);
+  border: none;
+  cursor: pointer;
+  font-family: var(--font);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--g600);
+  letter-spacing: 0.01em;
+  transition: background 0.2s, color 0.2s;
+  text-align: left;
+}
+
+.retainer-toggle:hover {
+  background: var(--g200);
+  color: var(--black);
+}
+
+.rt-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.rt-dot {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--g400);
+  flex-shrink: 0;
+  transition: background 0.2s;
+}
+
+.retainer-toggle:hover .rt-dot,
+.retainer-toggle[aria-expanded="true"] .rt-dot {
+  background: var(--black);
+}
+
+.rt-icon {
+  font-size: 14px;
+  color: var(--g400);
+  transition: transform 0.35s cubic-bezier(0.23,1,0.32,1), color 0.2s;
+  flex-shrink: 0;
+}
+
+.retainer-toggle[aria-expanded="true"] .rt-icon {
+  transform: rotate(180deg);
+  color: var(--black);
+}
+
+.retainer-panel {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.4s cubic-bezier(0.23,1,0.32,1);
+  overflow: hidden;
+}
+
+.retainer-panel[aria-hidden="false"] {
+  grid-template-rows: 1fr;
+}
+
+.retainer-panel > * {
+  overflow: hidden;
+}
+
+.retainer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 0.5px solid var(--g200);
+  border-left: 0.5px solid var(--g200);
+  margin: 0;
+}
+
+.retainer-card {
+  padding: 36px;
+  border-right: 0.5px solid var(--g200);
+  border-bottom: 0.5px solid var(--g200);
+  background: var(--white);
+  transition: background 0.25s;
+}
+
+.retainer-card:hover { background: var(--g100); }
+
+.retainer-note {
+  font-size: 12px;
+  color: var(--g400);
+  padding: 16px 36px 24px;
+  background: var(--white);
+  border-top: 0.5px solid var(--g200);
+  font-weight: 300;
+  font-style: italic;
+}
+
+/* ============================================================
+   SAVINGS CALCULATOR
+============================================================ */
+
+.calc-controls { display: flex; flex-direction: column; gap: 28px; }
+
+.cf-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--g600);
+  margin-bottom: 10px;
+}
+
+.calc-controls select {
+  font-family: var(--font);
+  font-size: 14px;
+  color: var(--black);
+  background: var(--white);
+  border: 0.5px solid var(--g200);
+  border-radius: 6px;
+  padding: 11px 14px;
+  appearance: none;
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.calc-controls select:hover,
+.calc-controls select:focus { border-color: var(--g400); }
+
+.range-track {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 2px;
+  background: var(--g200);
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+  margin: 6px 0;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 18px; height: 18px;
+  border-radius: 50%;
+  background: var(--black);
+  cursor: pointer;
+  border: 3px solid var(--white);
+  box-shadow: 0 0 0 1px var(--g300);
+  transition: transform 0.15s;
+}
+
+input[type="range"]::-webkit-slider-thumb:active { transform: scale(1.2); }
+
+.range-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: var(--g400);
+}
+
+.range-current {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--black);
+  font-variant-numeric: tabular-nums;
+}
+
+.check-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.check-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  color: var(--black);
+  cursor: pointer;
+  font-weight: 400;
+  user-select: none;
+}
+
+.check-label input[type="checkbox"] {
+  width: 15px; height: 15px;
+  accent-color: var(--black);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+/* Comparison table */
+.comp-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.comp-table th {
+  text-align: left;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--g400);
+  padding: 0 0 14px;
+  border-bottom: 0.5px solid var(--g200);
+}
+
+.comp-table th:not(:first-child) { text-align: right; }
+
+.comp-table td {
+  padding: 13px 0;
+  border-bottom: 0.5px solid var(--g200);
+  vertical-align: middle;
+}
+
+.comp-table td:not(:first-child) {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  font-weight: 500;
+}
+
+.row-label { color: var(--g600); font-size: 13px; font-weight: 400; }
+.col-them { color: var(--danger); }
+.col-us   { color: var(--success); }
+
+.total-row td {
+  font-size: 15px;
+  font-weight: 600;
+  border-bottom: none;
+  padding-top: 20px;
+}
+
+.savings-badge {
+  display: inline-block;
+  background: #E8F4EE;
+  color: var(--success);
+  font-size: 10px;
+  font-weight: 600;
+  padding: 2px 7px;
+  border-radius: 4px;
+  margin-left: 8px;
+  vertical-align: middle;
+  letter-spacing: 0.04em;
+}
+
+.savings-summary {
+  margin-top: 28px;
+  padding: 28px 32px;
+  background: var(--black);
+  border-radius: 8px;
+}
+
+.ss-label {
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--g400);
+  margin-bottom: 10px;
+}
+
+.ss-val {
+  font-size: 42px;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  color: var(--white);
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+}
+
+.ss-sub {
+  font-size: 13px;
+  color: var(--g600);
+  margin-top: 8px;
+  font-weight: 300;
+}
+
+.calc-disclaimer {
+  font-size: 12px;
+  color: var(--g400);
+  margin-top: 18px;
+  line-height: 1.65;
+}
+
+/* ============================================================
+   HOW IT WORKS
+============================================================ */
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: 0.5px solid var(--g200);
+}
+
+.step-card {
+  padding: 48px 40px;
+  border-right: 0.5px solid var(--g200);
+  position: relative;
+  overflow: hidden;
+}
+
+.step-card:last-child { border-right: none; }
+
+.step-bar {
+  width: 0%;
+  height: 2px;
+  background: var(--black);
+  position: absolute;
+  top: 0; left: 0;
+  transition: width 0.8s cubic-bezier(0.23,1,0.32,1);
+}
+
+.step-card.in-view .step-bar { width: 100%; }
+
+.step-num {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--g400);
+  margin-bottom: 32px;
+}
+
+.step-title {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--black);
+  margin-bottom: 16px;
+  letter-spacing: -0.015em;
+}
+
+.step-desc {
+  font-size: 13px;
+  color: var(--g600);
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+/* ============================================================
+   CTA SECTION
+============================================================ */
+.cta-section {
+  padding: 120px 48px;
+  background: var(--black);
+  text-align: center;
+  border-bottom: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, rgba(255,255,255,0.04) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+.cta-inner { position: relative; z-index: 1; }
+
+.cta-eyebrow {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--g600);
+  margin-bottom: 24px;
+}
+
+.cta-title {
+  font-size: clamp(32px, 5vw, 60px);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1.06;
+  color: var(--white);
+  margin-bottom: calc(20px - 0.12em);
+  padding-bottom: 0.12em; /* room for descenders */
+  overflow: hidden;
+}
+
+.cta-sub {
+  font-size: 16px;
+  color: var(--g600);
+  max-width: 440px;
+  margin: 0 auto 48px;
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+.btn-white {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--black);
+  background: var(--white);
+  padding: 16px 36px;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  will-change: transform;
+}
+
+.cta-note {
+  margin-top: 24px;
+  font-size: 13px;
+  color: var(--g600);
+  font-weight: 300;
+}
+
+.cta-note a {
+  color: var(--g400);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* ============================================================
+   SITE FOOTER
+============================================================ */
+.site-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 48px;
+  background: var(--black);
+  border-top: 0.5px solid #1a1a1a;
+  font-size: 12px;
+  color: var(--g600);
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  color: var(--white);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.footer-dot {
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: var(--white);
+  flex-shrink: 0;
+}
+
+.footer-links {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-links a {
+  color: var(--g600);
+  text-decoration: none;
+  font-size: 12px;
+  transition: color 0.15s;
+  cursor: pointer;
+}
+
+.footer-links a:hover { color: var(--g400); }
+
+/* ============================================================
+   MOBILE
+============================================================ */
+@media (max-width: 900px) {
+  nav { padding: 0 20px; }
+  .nav-links { display: none; }
+  .hero, section, #legal, .cta-section { padding-left: 20px; padding-right: 20px; }
+  .hero { padding-top: 120px; padding-bottom: 60px; }
+  .services-grid { grid-template-columns: 1fr 1fr; }
+  .service-card:nth-child(2n) { border-right: none; }
+  .service-card:nth-child(3) { border-right: 0.5px solid var(--g200); }
+  .service-card:nth-child(5),
+  .service-card:nth-child(6) { border-bottom: none; }
+  .service-card:nth-child(3),
+  .service-card:nth-child(4) { border-bottom: 0.5px solid var(--g200); }
+  .steps-grid { grid-template-columns: 1fr; }
+  .step-card { border-right: none; border-bottom: 0.5px solid var(--g200); }
+  .step-card:last-child { border-bottom: none; }
+  .legal-grid { grid-template-columns: 1fr; gap: 32px; }
+  .legal-sidebar { position: static; }
+  .site-footer { padding: 24px 20px; }
+}
+
+@media (max-width: 600px) {
+  .services-grid { grid-template-columns: 1fr; }
+  .service-card { border-right: none !important; border-bottom: 0.5px solid var(--g200) !important; }
+  .service-card:last-child { border-bottom: none !important; }
+}
+
+/* ============================================================
+   REDUCED MOTION
+============================================================ */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+  /* No entrance animation: show the hero straight away instead of leaving it hidden */
+  .hero-reveal { display: none; }
+  .eyebrow, .hero-sub, .hero-actions, .ticker-wrap, .stat-row { opacity: 1 !important; }
+}
+</style>
+</head>
+<body>
+
+<!-- CUSTOM CURSOR -->
+<div id="cursor" role="presentation" aria-hidden="true"></div>
+
+<!-- ============================================================
+   NAVIGATION
+============================================================ -->
+<nav role="navigation" aria-label="Main navigation">
+  <a href="#" class="nav-logo" aria-label="Sable AI home">
+    <span class="logo-dot" aria-hidden="true"></span>
+    Sable AI
+  </a>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#how">How it works</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <!-- [REPLACE: EMAIL] — hidden until there's a real Sable email. Un-comment and fill in:
+    <li><a href="mailto:EMAIL_HERE" style="font-size:13px;color:var(--g600);text-decoration:none;" class="nav-contact">EMAIL_HERE</a></li>
+    -->
+    <!-- [REPLACE: CALENDLY_URL] → swap href below with your Calendly link -->
+    <li><a href="#contact" class="nav-cta mag-wrap">Book a call</a></li>
+  </ul>
+</nav>
+
+<!-- ============================================================
+   HERO
+============================================================ -->
+<section class="hero" aria-labelledby="hero-heading">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-reveal" aria-hidden="true"></div>
+
+  <div class="hero-content">
+    <div class="eyebrow">
+      <span class="eyebrow-line" aria-hidden="true"></span>
+      <!-- [REPLACE: TAGLINE] -->
+      AI Automation for Growing Businesses
+    </div>
+
+    <h1 class="hero-headline" id="hero-heading">
+      Your competitors are<br>
+      <span class="dim">already using AI.</span>
+    </h1>
+
+    <p class="hero-sub">
+      Most Treasure Valley businesses aren't using AI yet. We change that — teaching your team, setting it up for your workflow, and staying on as your dedicated AI resource.
+    </p>
+
+    <div class="hero-actions">
+      <div class="mag-wrap">
+        <!-- [REPLACE: CALENDLY_URL] -->
+        <a href="#contact" class="btn-primary">
+          Book a free discovery call <span class="btn-arrow">→</span>
+        </a>
+      </div>
+
+    </div>
+
+    <div class="ticker-wrap" aria-live="polite">
+      <div class="ticker-label">Hours saved per week on average</div>
+      <div class="ticker-val" id="ticker" aria-label="Hours saved counter">0</div>
+      <div class="ticker-desc">in manual tasks, follow-ups, and repetitive admin work</div>
+    </div>
+
+    <div class="stat-row" role="list">
+      <div role="listitem">
+        <div class="stat-label">First call</div>
+        <div class="stat-val">Free</div>
+      </div>
+      <div role="listitem">
+        <div class="stat-label">Powered by</div>
+        <div class="stat-val">Claude AI</div>
+      </div>
+      <div role="listitem">
+        <div class="stat-label">Based in</div>
+        <div class="stat-val">Meridian, ID</div>
+      </div>
+      <div role="listitem">
+        <div class="stat-label">Contract required</div>
+        <div class="stat-val">None</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+   SERVICES
+============================================================ -->
+<section id="services" aria-labelledby="services-heading">
+  <div class="s-eyebrow" aria-hidden="true">What we do</div>
+  <h2 class="s-title" id="services-heading">Automations that pay for themselves</h2>
+  <p class="s-sub">Every system runs without you touching it. Set up once, works around the clock.</p>
+
+  <div class="services-grid" role="list">
+
+    <article class="service-card" role="listitem">
+      <div class="sc-inner">
+        <div class="sc-num">01</div>
+        <h3 class="sc-name">Lead follow-up sequences</h3>
+        <p class="sc-desc">Every new inquiry gets a personalized follow-up — written from their actual message, not a generic template. More deals closed, less manual work.</p>
+        <span class="sc-tag">Triggered · automated</span>
+      </div>
+    </article>
+
+    <article class="service-card" role="listitem">
+      <div class="sc-inner">
+        <div class="sc-num">02</div>
+        <h3 class="sc-name">Voice agent setup</h3>
+        <p class="sc-desc">AI that answers your phones, qualifies leads, and handles after-hours inquiries — trained on your business, in your voice. Never miss a call again.</p>
+        <span class="sc-tag">Always on · included in retainer</span>
+      </div>
+    </article>
+
+    <article class="service-card" role="listitem">
+      <div class="sc-inner">
+        <div class="sc-num">03</div>
+        <h3 class="sc-name">Review response drafting</h3>
+        <p class="sc-desc">New Google or Yelp review? We draft a response in your voice within hours. You approve in one click. Never let a review go unanswered again.</p>
+        <span class="sc-tag">Daily · included in retainer</span>
+      </div>
+    </article>
+
+    <article class="service-card" role="listitem">
+      <div class="sc-inner">
+        <div class="sc-num">04</div>
+        <h3 class="sc-name">Document generation</h3>
+        <p class="sc-desc">Estimates, SOPs, proposals, onboarding docs — generated from a single conversation in 24 hours. Stop writing the same things over and over.</p>
+        <span class="sc-tag">On demand · included in retainer</span>
+      </div>
+    </article>
+
+    <article class="service-card" role="listitem">
+      <div class="sc-inner">
+        <div class="sc-num">05</div>
+        <h3 class="sc-name">Social content calendar</h3>
+        <p class="sc-desc">20–30 posts, captions, and hooks written for your business on the 1st of every month. You know you should be posting — now you will be.</p>
+        <span class="sc-tag">Monthly · included in retainer</span>
+      </div>
+    </article>
+
+    <article class="service-card service-card--cta" role="listitem">
+      <div class="sc-inner">
+        <div class="sc-num">—</div>
+        <h3 class="sc-name">Need something specific automated?</h3>
+        <p class="sc-desc">We also handle competitor intelligence, weekly reporting, team AI training, and more. Tell us what eats your time — if it's repetitive, we can automate it.</p>
+        <a href="#contact" class="sc-cta-link">Let's talk about it <span>→</span></a>
+      </div>
+    </article>
+
+  </div>
+
+  <!-- RETAINER EXAMPLES EXPAND -->
+  <div class="retainer-expand">
+    <button class="retainer-toggle" id="retainerToggle" aria-expanded="false" aria-controls="retainerPanel">
+      <span class="rt-left">
+        <span class="rt-dot" aria-hidden="true"></span>
+        On retainer, we offer these and more — every automation is custom to your workflow
+      </span>
+      <span class="rt-icon" id="rtIcon" aria-hidden="true">↓</span>
+    </button>
+
+    <div class="retainer-panel" id="retainerPanel" aria-hidden="true">
+      <div class="retainer-grid">
+
+        <div class="retainer-card">
+          <div class="sc-num">—</div>
+          <h4 class="sc-name">Competitor intelligence</h4>
+          <p class="sc-desc">Every Monday, a full report on what your competitors changed — pricing, offers, reviews, website updates — delivered straight to your inbox.</p>
+          <span class="sc-tag">Weekly · automated</span>
+        </div>
+
+        <div class="retainer-card">
+          <div class="sc-num">—</div>
+          <h4 class="sc-name">Review response drafting</h4>
+          <p class="sc-desc">New Google or Yelp review? We draft a response in your voice within hours. You approve in one click. Never ignore a review again.</p>
+          <span class="sc-tag">Daily · automated</span>
+        </div>
+
+        <div class="retainer-card">
+          <div class="sc-num">—</div>
+          <h4 class="sc-name">Social content calendar</h4>
+          <p class="sc-desc">20–30 posts, captions, and hooks written for your business on the 1st of every month. Delivered ready to schedule.</p>
+          <span class="sc-tag">Monthly · automated</span>
+        </div>
+
+        <div class="retainer-card">
+          <div class="sc-num">—</div>
+          <h4 class="sc-name">Weekly business digest</h4>
+          <p class="sc-desc">Every Friday: plain-English summary of your numbers, anomalies flagged, and one or two recommendations. No dashboard to learn.</p>
+          <span class="sc-tag">Weekly · automated</span>
+        </div>
+
+        <div class="retainer-card">
+          <div class="sc-num">—</div>
+          <h4 class="sc-name">After-hours lead capture</h4>
+          <p class="sc-desc">AI answers inquiries when you're off the clock, qualifies the lead, and has a full summary waiting for you every morning.</p>
+          <span class="sc-tag">Always on · automated</span>
+        </div>
+
+        <div class="retainer-card">
+          <div class="sc-num">—</div>
+          <h4 class="sc-name">Built for your workflow</h4>
+          <p class="sc-desc">Tell us what eats your team's time. We build around it. Every retainer client gets automations specific to how their business actually runs.</p>
+          <span class="sc-tag">Custom · yours</span>
+        </div>
+
+      </div>
+      <p class="retainer-note">These are examples — not a fixed menu. We scope everything to what actually matters in your business.</p>
+    </div>
+  </div>
+
+</section>
+
+<!-- ============================================================
+   HOW IT WORKS
+============================================================ -->
+<section id="how" aria-labelledby="how-heading">
+  <div class="s-eyebrow" aria-hidden="true">The process</div>
+  <h2 class="s-title" id="how-heading">Up and running fast</h2>
+  <p class="s-sub">No long onboarding. No technical knowledge required on your end. Timeline depends on scope — we'll set clear expectations on the call.</p>
+
+  <div class="steps-grid" role="list">
+    <div class="step-card" role="listitem">
+      <div class="step-bar" aria-hidden="true"></div>
+      <div class="step-num">Step 01</div>
+      <h3 class="step-title">15-minute call</h3>
+      <p class="step-desc">We talk about your business, where your team spends time on repetitive work, and what tools you're currently paying for. No pitch — just a conversation to see if it's a fit.</p>
+    </div>
+    <div class="step-card" role="listitem">
+      <div class="step-bar" aria-hidden="true"></div>
+      <div class="step-num">Step 02</div>
+      <h3 class="step-title">We come to you</h3>
+      <p class="step-desc">1–2 hours on-site with your team. We cover AI basics, prompt writing, and show you live demos built around your specific business. Plain English, no tech knowledge needed.</p>
+    </div>
+    <div class="step-card" role="listitem">
+      <div class="step-bar" aria-hidden="true"></div>
+      <div class="step-num">Step 03</div>
+      <h3 class="step-title">Stay on retainer</h3>
+      <p class="step-desc">If you want us handling all of this going forward, we stay on as your AI consultant. Monthly check-ins, on-call access, prompt updates, tool vetting, and simple automations. Cancel anytime.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+   CTA
+============================================================ -->
+<section id="contact" class="cta-section" aria-labelledby="cta-heading">
+  <div class="cta-inner">
+    <div class="cta-eyebrow">Ready when you are</div>
+    <h2 class="cta-title" id="cta-heading">
+      Book a free<br>discovery call
+    </h2>
+    <p class="cta-sub">15 minutes. We'll talk through your business, where AI makes sense, and what a workshop would look like — no pitch, no pressure.</p>
+    <div class="mag-wrap">
+      <!-- [REPLACE: CALENDLY_URL] — replace # with your Calendly link -->
+      <a href="#" class="btn-white">
+        Schedule a 15-minute call <span class="btn-arrow">→</span>
+      </a>
+    </div>
+    <!-- [REPLACE: EMAIL] — hidden until there's a real Sable email. Un-comment and fill in:
+    <p class="cta-note">
+      Or email <a href="mailto:EMAIL_HERE">EMAIL_HERE</a> — we respond within a few hours.
+    </p>
+    -->
+  </div>
+</section>
+
+<!-- ============================================================
+   FOOTER
+============================================================ -->
+<footer class="site-footer" role="contentinfo">
+  <a href="#" class="footer-logo" aria-label="Sable AI home">
+    <span class="footer-dot" aria-hidden="true"></span>
+    Sable AI
+  </a>
+  <div class="footer-links">
+    <a href="sable-terms.html" target="_blank">Terms</a>
+    <!-- [REPLACE: EMAIL] — hidden until there's a real Sable email. Un-comment and fill in:
+    <a href="mailto:EMAIL_HERE">Contact</a>
+    -->
+    <span style="color:#2a2a2a;">Built by <a href="https://knackstudio.netlify.app" style="color:#3a3a3a;">Knack Studios</a></span>
+  </div>
+  <!-- [REPLACE: YEAR] -->
+  <div>© 2026 Sable AI · Serving Meridian, Nampa, Boise, Caldwell &amp; the Treasure Valley</div>
+</footer>
+
+<!-- ============================================================
+   SCRIPTS
+============================================================ -->
+<script>
+/* ============================================================
+   CALCULATOR LOGIC
+============================================================ */
+// Calculator removed
+/* ============================================================
+   FAQ ACCORDION
+============================================================ */
+document.querySelectorAll('.faq-question').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const item   = btn.closest('.faq-item');
+    const answer = item.querySelector('.faq-answer');
+    const isOpen = item.classList.contains('open');
+
+    // Close all
+    document.querySelectorAll('.faq-item').forEach(i => {
+      i.classList.remove('open');
+      i.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+      i.querySelector('.faq-answer').setAttribute('aria-hidden', 'true');
+    });
+
+    // Open clicked if it was closed
+    if (!isOpen) {
+      item.classList.add('open');
+      btn.setAttribute('aria-expanded', 'true');
+      answer.setAttribute('aria-hidden', 'false');
+    }
+  });
+});
+
+
+/* ============================================================
+   RETAINER PANEL TOGGLE
+============================================================ */
+(function() {
+  const btn   = document.getElementById('retainerToggle');
+  const panel = document.getElementById('retainerPanel');
+  if (!btn || !panel) return;
+
+  // Wrap panel children so grid-template-rows trick works
+  const inner = document.createElement('div');
+  while (panel.firstChild) inner.appendChild(panel.firstChild);
+  panel.appendChild(inner);
+
+  btn.addEventListener('click', () => {
+    const expanded = btn.getAttribute('aria-expanded') === 'true';
+    btn.setAttribute('aria-expanded', String(!expanded));
+    panel.setAttribute('aria-hidden', String(expanded));
+  });
+})();
+
+/* ============================================================
+   WAIT FOR LIBRARIES
+============================================================ */
+window.addEventListener('load', () => {
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const t = document.getElementById('ticker');
+    if (t) t.textContent = '15'; // show the final value instead of 0
+    return;
+  }
+  const finePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+
+  /* ----------------------------------------------------------
+     LENIS SMOOTH SCROLL
+  ---------------------------------------------------------- */
+  const lenis = new Lenis({
+    duration: 1.2,
+    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+    smooth: true,
+  });
+
+  function raf(time) {
+    lenis.raf(time);
+    ScrollTrigger.update();
+    requestAnimationFrame(raf);
+  }
+  requestAnimationFrame(raf);
+
+  gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+
+  // Smooth anchor links through Lenis
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', (e) => {
+      const href = a.getAttribute('href');
+      if (href === '#') { // bare "#" (logo, Calendly placeholder) — querySelector('#') would throw
+        e.preventDefault();
+        if (a.matches('.nav-logo, .footer-logo')) lenis.scrollTo(0, { duration: 1.4 });
+        return;
+      }
+      let target = null;
+      try { target = document.querySelector(href); } catch (err) { target = null; }
+      if (target) {
+        e.preventDefault();
+        lenis.scrollTo(target, { offset: -64, duration: 1.4 });
+      }
+    });
+  });
+
+  /* ----------------------------------------------------------
+     CUSTOM CURSOR — ticker tape money trail
+  ---------------------------------------------------------- */
+  const cursor = document.getElementById('cursor');
+  const root = document.documentElement;
+  if (finePointer) root.classList.add('has-cursor');
+  let cx = 0, cy = 0, tx = 0, ty = 0;
+  let lastParticleTime = 0;
+  let mouseSpeed = 0;
+  let lastMouseX = 0, lastMouseY = 0;
+  let isMoving = false;
+  let moveTimer;
+
+  // Pool of dollar amounts that float up — vary them so it feels real
+  const AMOUNTS = [
+    '$12','$47','$89','$203','$31','$156','$74','$318',
+    '$19','$92','$441','$63','$27','$185','$509','$38'
+  ];
+  let amountIdx = 0;
+
+  if (finePointer) document.addEventListener('mousemove', (e) => {
+    tx = e.clientX;
+    ty = e.clientY;
+    if (!root.classList.contains('cursor-live')) { // first move: appear at the pointer, not the corner
+      root.classList.add('cursor-live');
+      cx = tx; cy = ty;
+    }
+
+    // Measure speed
+    const dx = e.clientX - lastMouseX;
+    const dy = e.clientY - lastMouseY;
+    mouseSpeed = Math.sqrt(dx * dx + dy * dy);
+    lastMouseX = e.clientX;
+    lastMouseY = e.clientY;
+    isMoving = true;
+    clearTimeout(moveTimer);
+    moveTimer = setTimeout(() => { isMoving = false; }, 80);
+
+    // Spawn particle — throttled by speed & time
+    const now = Date.now();
+    const minInterval = Math.max(60, 140 - mouseSpeed * 2); // faster mouse = more particles
+    if (mouseSpeed > 3 && now - lastParticleTime > minInterval) {
+      spawnParticle(e.clientX, e.clientY);
+      lastParticleTime = now;
+    }
+  });
+
+  function spawnParticle(x, y) {
+    const el = document.createElement('div');
+    el.className = 'money-particle';
+    el.textContent = AMOUNTS[amountIdx % AMOUNTS.length];
+    amountIdx++;
+
+    // Slight random horizontal drift so they don't stack
+    const drift = (Math.random() - 0.5) * 28;
+    el.style.left = (x + drift) + 'px';
+    el.style.top  = y + 'px';
+
+    // Randomise size slightly for depth
+    const scale = 0.8 + Math.random() * 0.5;
+    el.style.fontSize = Math.round(10 * scale) + 'px';
+    el.style.opacity  = (0.6 + Math.random() * 0.4).toFixed(2);
+
+    document.body.appendChild(el);
+    // Remove after animation completes
+    el.addEventListener('animationend', () => el.remove());
+  }
+
+  if (finePointer) root.addEventListener('mouseleave', () => root.classList.remove('cursor-live'));
+
+  // Smooth cursor follow — lagged slightly for feel (mouse/trackpad only)
+  if (finePointer) (function moveCursor() {
+    cx += (tx - cx) * 0.18;
+    cy += (ty - cy) * 0.18;
+    cursor.style.left = cx + 'px';
+    cursor.style.top  = cy + 'px';
+    requestAnimationFrame(moveCursor);
+  })();
+
+  document.addEventListener('mousedown', () => cursor.classList.add('clicking'));
+  document.addEventListener('mouseup',   () => cursor.classList.remove('clicking'));
+
+  document.querySelectorAll('a, button, input, select, label, .service-card, .mag-wrap').forEach(el => {
+    el.addEventListener('mouseenter', () => cursor.classList.add('hovering'));
+    el.addEventListener('mouseleave', () => cursor.classList.remove('hovering'));
+  });
+
+  /* ----------------------------------------------------------
+     MAGNETIC BUTTONS
+  ---------------------------------------------------------- */
+  document.querySelectorAll('.mag-wrap').forEach(wrap => {
+    const btn = wrap.querySelector('a, button');
+    if (!btn || !finePointer) return; // touch taps fake a mousemove — no magnet there
+
+    wrap.addEventListener('mousemove', (e) => {
+      const r   = wrap.getBoundingClientRect();
+      const cx  = r.left + r.width  / 2;
+      const cy  = r.top  + r.height / 2;
+      const dx  = (e.clientX - cx) * 0.35;
+      const dy  = (e.clientY - cy) * 0.35;
+      gsap.to(btn, { x: dx, y: dy, duration: 0.4, ease: 'power2.out' });
+    });
+
+    wrap.addEventListener('mouseleave', () => {
+      gsap.to(btn, { x: 0, y: 0, duration: 0.6, ease: 'elastic.out(1,0.5)' });
+    });
+  });
+
+  /* ----------------------------------------------------------
+     HERO — cinematic page-load sequence
+  ---------------------------------------------------------- */
+  const tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
+
+  // 1. Wipe reveal — curtain rises
+  tl.to('.hero-reveal', { scaleY: 0, duration: 1.1, ease: 'power4.inOut', transformOrigin: 'top' });
+
+  // 2. Split headline — chars fly up
+  const heroSplit = new SplitType('.hero-headline', { types: 'words,chars' });
+  tl.from(heroSplit.chars, {
+    y: '110%',
+    opacity: 0,
+    duration: 0.8,
+    stagger: 0.018,
+    ease: 'power3.out',
+  }, '-=0.4');
+
+  // 3. Eyebrow + sub + actions + ticker cascade
+  tl.to('.eyebrow', { opacity: 1, y: 0, duration: 0.6 }, '-=0.4');
+  tl.to('.hero-sub', { opacity: 1, y: 0, duration: 0.6 }, '-=0.3');
+  tl.to('.hero-actions', { opacity: 1, y: 0, duration: 0.5 }, '-=0.3');
+  tl.to('.ticker-wrap', { opacity: 1, y: 0, duration: 0.5 }, '-=0.2');
+
+  // 4. Ticker count-up
+  tl.add(() => {
+    const el  = document.getElementById('ticker');
+    const end = 15;
+    const dur = 1.8;
+    gsap.fromTo({ val: 0 }, { val: end }, {
+      duration: dur,
+      ease: 'power2.out',
+      onUpdate() { el.textContent = Math.round(this.targets()[0].val); }
+    });
+  }, '-=0.1');
+
+  // 5. Stat row
+  tl.to('.stat-row', { opacity: 1, y: 0, duration: 0.5 }, '-=1.8');
+
+  /* ----------------------------------------------------------
+     SCROLL-TRIGGERED SECTION TITLES — SplitType word reveal
+  ---------------------------------------------------------- */
+  document.querySelectorAll('.s-title, .cta-title').forEach(el => {
+    const split = new SplitType(el, { types: 'words' });
+    gsap.from(split.words, {
+      y: '100%',
+      opacity: 0,
+      duration: 0.7,
+      stagger: 0.06,
+      ease: 'power3.out',
+      scrollTrigger: {
+        trigger: el,
+        start: 'top 88%',
+        toggleActions: 'play none none none',
+      }
+    });
+  });
+
+  /* ----------------------------------------------------------
+     SERVICE CARDS — staggered slide-up
+  ---------------------------------------------------------- */
+  gsap.from('.service-card', {
+    y: 40,
+    opacity: 0,
+    duration: 0.7,
+    stagger: 0.08,
+    ease: 'power3.out',
+    scrollTrigger: {
+      trigger: '.services-grid',
+      start: 'top 80%',
+    }
+  });
+
+
+
+  /* ----------------------------------------------------------
+     STEP CARDS — bar reveal + stagger
+  ---------------------------------------------------------- */
+  document.querySelectorAll('.step-card').forEach((card, i) => {
+    ScrollTrigger.create({
+      trigger: card,
+      start: 'top 80%',
+      onEnter: () => {
+        card.classList.add('in-view');
+        gsap.from(card.querySelector('.step-title'), {
+          y: 20, opacity: 0, duration: 0.6, delay: i * 0.12, ease: 'power2.out'
+        });
+        gsap.from(card.querySelector('.step-desc'), {
+          y: 14, opacity: 0, duration: 0.6, delay: i * 0.12 + 0.1, ease: 'power2.out'
+        });
+      }
+    });
+  });
+
+  /* ----------------------------------------------------------
+     CTA section — pin + scale up
+  ---------------------------------------------------------- */
+  gsap.from('.cta-inner', {
+    scale: 0.96,
+    opacity: 0,
+    duration: 0.9,
+    ease: 'power3.out',
+    scrollTrigger: {
+      trigger: '.cta-section',
+      start: 'top 80%',
+    }
+  });
+
+  /* ----------------------------------------------------------
+     NAV — hide on scroll down, show on scroll up
+  ---------------------------------------------------------- */
+  let lastY = 0;
+  ScrollTrigger.create({
+    onUpdate: (self) => {
+      const y = self.scroll();
+      if (y > lastY && y > 100) {
+        gsap.to('nav', { yPercent: -100, duration: 0.35, ease: 'power2.inOut' });
+      } else {
+        gsap.to('nav', { yPercent: 0, duration: 0.35, ease: 'power2.out' });
+      }
+      lastY = y;
+    }
+  });
+
+}); // end load
+</script>
+</body>
+</html>
